@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: LexendDeca;
+  src: url(../fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: BigShouldersDisplay;
+  src: url(../fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+
+body{
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  font-size: 15px;
+  background-color: #f2f2f2;
+}
+
+.container{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  color: white;
+  max-width: 45rem;
+}
+
+@media (max-width: 720px) {
+  .main{
+    grid-template-columns: 1fr;
+    max-width: 15rem;
+  }
+}
+
+.card{
+  display: grid;
+  padding: 2.5rem;
+  gap: 2rem;
+}
+
+.card h2{
+  font-family: BigShouldersDisplay;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card p{
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: LexendDeca;
+  font-size: .75rem;
+  font-weight: 400;
+  text-underline-position: auto;
+  line-height: 1.2rem;
+}
+
+.card button{
+  border-radius: 999rem;
+  max-width: 100%;
+  padding: 0.75em 1em;
+  margin-top: 2.5em;
+  border: none;
+  background-color: white;
+  width: 75%;
+  font-family: LexendDeca;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.card button:hover{
+  outline: 1px white solid;
+  background-color: transparent;
+  color: white;
+}
+
+.orange{
+  background-color: hsl(31, 77%, 52%);
+}
+
+.cyan{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.darkcyan{
+  background-color: hsl(179, 100%, 13%);
+}
+
+.orange-btn{
+  color: hsl(31, 77%, 52%);
+}
+
+.cyan-btn{
+  color: hsl(184, 100%, 22%);
+}
+
+.darkcyan-btn{
+  color: hsl(179, 100%, 13%);
+}
